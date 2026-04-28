@@ -90,15 +90,15 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
               ГОТОВ
               <br />
               <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-                БЕЖАТЬ С НАМИ?
+                ПЛЫТЬ С НАМИ?
               </span>
             </h2>
 
             {/* Supporting Text */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-medium">
-              Присоединяйся к тысячам бегунов по всему миру, которые нашли свою команду,
+              Присоединяйся к тысячам пловцов по всей стране, которые нашли свою стихию,
               <br className="hidden md:block" />
-              раздвинули границы возможного и открыли свой истинный потенциал.
+              раздвинули границы возможного и открыли свой истинный потенциал в воде.
             </p>
 
             {/* Stats Grid */}
@@ -109,8 +109,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <Users className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">50 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Бегунов</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">5 000+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Пловцов</div>
               </div>
 
               <div className="text-center">
@@ -119,8 +119,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">120+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Городов мира</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">30+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Городов</div>
               </div>
 
               <div className="text-center">
@@ -130,7 +130,7 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                   </div>
                 </div>
                 <div className="text-2xl md:text-3xl font-black text-white mb-1">365</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Дней в году</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Дней в воде</div>
               </div>
 
               <div className="text-center">
@@ -139,8 +139,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <Trophy className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">10 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Целей достигнуто</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">1 200+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Рекордов побито</div>
               </div>
             </div>
 
@@ -149,15 +149,15 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
               size="xxl"
               className="font-bold text-xl tracking-wide px-12 py-4 bg-gray-900 hover:bg-gray-800 text-white border-2 border-gray-900 hover:scale-105 transition-all duration-300"
             >
-              ВСТУПИТЬ В STRIDE
+              ВСТУПИТЬ В AQUA
             </LiquidButton>
 
             {/* Trust Indicators */}
             <div className="mt-12 pt-6 border-t border-white/20">
-              <p className="text-xs text-gray-400 mb-3 font-medium">НАМ ДОВЕРЯЮТ БЕГУНЫ ПО ВСЕМУ МИРУ</p>
+              <p className="text-xs text-gray-400 mb-3 font-medium">НАМ ДОВЕРЯЮТ ПЛОВЦЫ ПО ВСЕЙ СТРАНЕ</p>
               <div className="flex flex-wrap justify-center items-center gap-4 text-gray-300">
                 <span className="text-xs font-semibold">ДЛЯ НОВИЧКОВ</span>
-                <span className="text-xs font-semibold">МИРОВОЕ СООБЩЕСТВО</span>
+                <span className="text-xs font-semibold">ОТКРЫТАЯ ВОДА</span>
                 <span className="text-xs font-semibold">ПРОВЕРЕННЫЕ РЕЗУЛЬТАТЫ</span>
                 <span className="text-xs font-semibold">БЕСПЛАТНО</span>
               </div>

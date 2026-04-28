@@ -5,145 +5,145 @@ import { cn } from "@/lib/utils"
 
 const SQRT_5000 = Math.sqrt(5000)
 
-// Running club testimonials data with randomly generated icons
+// Swimming club testimonials data
 const testimonials = [
   {
     tempId: 0,
     testimonial:
-      "Stride Collective изменил мою жизнь. От попыток пробежать 5 минут до первого марафона — это сообщество верило в меня, когда я сам в себя не верил.",
-    by: "Сергей Иванов, марафонец",
+      "Aqua Collective изменил мою жизнь. От попыток проплыть 25 метров до первого заплыва на открытой воде — это сообщество верило в меня, когда я сам в себя не верил.",
+    by: "Сергей Иванов, пловец на открытой воде",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SergeyIvanov&backgroundColor=3b82f6&textColor=ffffff",
   },
   {
     tempId: 1,
     testimonial:
-      "Я боялась присоединиться к беговой группе, но Stride Collective встретил меня с распростертыми объятиями. Теперь у меня друзья на всю жизнь и уверенность достигать любых целей.",
-    by: "Марина Петрова, трейлраннер",
+      "Я боялась присоединиться к группе, но Aqua Collective встретил меня с распростертыми объятиями. Теперь у меня друзья на всю жизнь и уверенность достигать любых целей в воде.",
+    by: "Марина Петрова, мастер баттерфляя",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MarinaPetrova&backgroundColor=10b981&textColor=ffffff",
   },
   {
     tempId: 2,
     testimonial:
-      "Энергетика на пробежках Stride Collective заразительна. Быстрый ты или медленный — все болеют за тебя. Здесь не соревнование, здесь сообщество.",
-    by: "Анна Козлова, любитель 5К",
+      "Атмосфера на тренировках Aqua Collective заразительна. Быстрый ты или медленный — все болеют за тебя. Здесь не соревнование, здесь сообщество.",
+    by: "Анна Козлова, любитель брасса",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AnnaKozlova&backgroundColor=8b5cf6&textColor=ffffff",
   },
   {
     tempId: 3,
     testimonial:
-      "После лет одиночных пробежек Stride Collective стал для меня открытием. Групповые тренировки помогли выйти на личные рекорды, о которых я и мечтать не мог.",
-    by: "Дмитрий Смирнов, спринтер",
+      "После лет одиночных заплывов Aqua Collective стал для меня открытием. Групповые тренировки помогли выйти на личные рекорды, о которых я и мечтать не мог.",
+    by: "Дмитрий Смирнов, спринтер 50м",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DmitrySmirnov&backgroundColor=ef4444&textColor=ffffff",
   },
   {
     tempId: 4,
     testimonial:
-      "Stride Collective научил меня, что бег — это не просто тренировка. Это терапия, дружба и приключение в одном флаконе. Этот клуб спас мое ментальное здоровье.",
-    by: "Елена Новикова, осознанный бегун",
+      "Aqua Collective научил меня, что плавание — это не просто тренировка. Это медитация, дружба и приключение в одном флаконе. Этот клуб спас мое ментальное здоровье.",
+    by: "Елена Новикова, осознанный пловец",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=ElenaNovikova&backgroundColor=f59e0b&textColor=ffffff",
   },
   {
     tempId: 5,
     testimonial:
-      "От дивана до 10К за 6 месяцев с поддержкой Stride Collective. Они принимают тебя таким, какой ты есть, и помогают понять, куда ты можешь дойти. Настоящая магия.",
+      "От боязни воды до первого километра в бассейне за 6 месяцев с поддержкой Aqua Collective. Они принимают тебя таким, какой ты есть. Настоящая магия.",
     by: "Алексей Морозов, история успеха",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexeyMorozov&backgroundColor=6366f1&textColor=ffffff",
   },
   {
     tempId: 6,
     testimonial:
-      "Рассветные пробежки со Stride Collective — это духовный опыт. Есть что-то мощное в том, чтобы двигаться вместе, пока мир просыпается вокруг нас.",
+      "Рассветные заплывы с Aqua Collective — это особый опыт. Есть что-то мощное в том, чтобы рассекать воду вместе, пока мир просыпается вокруг нас.",
     by: "Айгуль Рахимова, рассветный патруль",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AigulRahimova&backgroundColor=ec4899&textColor=ffffff",
   },
   {
     tempId: 7,
     testimonial:
-      "Я вступила в Stride Collective после переезда в новый город. Нашла не только беговое племя, но и настоящую семью. Движение здесь — это образ жизни.",
+      "Я вступила в Aqua Collective после переезда в новый город. Нашла не только команду пловцов, но и настоящую семью. Вода здесь — это образ жизни.",
     by: "Ольга Ким, строитель сообщества",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=OlgaKim&backgroundColor=06b6d4&textColor=ffffff",
   },
   {
     tempId: 8,
     testimonial:
-      "Stride Collective празднует каждую победу, даже самую маленькую. Мой первый километр ощущался как олимпийское золото с этой командой, болеющей за меня.",
-    by: "Наталья Соколова, герой первого км",
+      "Aqua Collective празднует каждую победу, даже самую маленькую. Мои первые 100 метров без остановки ощущались как олимпийское золото с этой командой рядом.",
+    by: "Наталья Соколова, герой первых 100м",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NataliyaSokolova&backgroundColor=f97316&textColor=ffffff",
   },
   {
     tempId: 9,
     testimonial:
-      "Тренировочные планы в Stride Collective невероятные. Я прошел путь от еле добегающего 5К до квалификации на Бостонский марафон всего за два года.",
-    by: "Михаил Волков, Бостонский квалификант",
+      "Тренировочные планы в Aqua Collective невероятные. Я прошел путь от любителя до участника соревнований по плаванию всего за полтора года.",
+    by: "Михаил Волков, соревновательный пловец",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MikhailVolkov&backgroundColor=84cc16&textColor=ffffff",
   },
   {
     tempId: 10,
     testimonial:
-      "Что я люблю в Stride Collective — это разнообразие. Бегуны всех возрастов, с разным опытом и способностями объединяются одной страстью.",
+      "Что я люблю в Aqua Collective — это разнообразие. Пловцы всех возрастов, с разным опытом объединяются одной страстью к воде.",
     by: "София Родригес, чемпион разнообразия",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SofiaRodriguez&backgroundColor=a855f7&textColor=ffffff",
   },
   {
     tempId: 11,
     testimonial:
-      "Дисциплина в Stride Collective не имеет равных. Когда знаешь, что твоя беговая семья ждет тебя — выходишь на пробежку несмотря ни на что.",
+      "Дисциплина в Aqua Collective не имеет равных. Когда знаешь, что твоя команда ждет тебя у бортика — приходишь на тренировку несмотря ни на что.",
     by: "Тимур Асланов, король постоянства",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=TimurAslanov&backgroundColor=059669&textColor=ffffff",
   },
   {
     tempId: 12,
     testimonial:
-      "Трейловая группа Stride Collective открыла мне самые красивые места, о которых я и не знал. Бег стал моим способом исследовать мир.",
-    by: "Нина Павлова, исследователь троп",
+      "Группа открытой воды Aqua Collective открыла мне самые красивые места, о которых я и не знал. Плавание стало моим способом исследовать мир.",
+    by: "Нина Павлова, исследователь открытой воды",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NinaPavlova&backgroundColor=0ea5e9&textColor=ffffff",
   },
   {
     tempId: 13,
     testimonial:
-      "Разговоры после пробежек в Stride Collective ценны не меньше самих пробежек. Мы решаем мировые проблемы километр за километром.",
-    by: "Роман Ким, философ бега",
+      "Разговоры после тренировок в Aqua Collective ценны не меньше самих заплывов. Мы решаем мировые проблемы гребок за гребком.",
+    by: "Роман Ким, философ плавания",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RomanKim&backgroundColor=dc2626&textColor=ffffff",
   },
   {
     tempId: 14,
     testimonial:
-      "Я никогда не думала, что стану бегуном, но дружелюбный к новичкам подход Stride Collective сделал это возможным. Теперь не представляю жизни без бега.",
-    by: "Екатерина Орлова, позднее цветение",
+      "Я никогда не думала, что стану пловцом, но дружелюбный подход Aqua Collective сделал это возможным. Теперь не представляю жизни без воды.",
+    by: "Екатерина Орлова, позднее открытие",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=EkaterinaOrlova&backgroundColor=7c3aed&textColor=ffffff",
   },
   {
     tempId: 15,
     testimonial:
-      "Поддержка при травмах в Stride Collective потрясающая. Когда я выбыл, они поддерживали мою мотивацию и помогли вернуться сильнее.",
+      "Поддержка при травмах в Aqua Collective потрясающая. Когда я выбыл, они поддерживали мою мотивацию и помогли вернуться в воду сильнее.",
     by: "Даниил Пак, история возвращения",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DaniilPak&backgroundColor=ea580c&textColor=ffffff",
   },
   {
     tempId: 16,
     testimonial:
-      "Благотворительные забеги Stride Collective придают нашим километрам смысл. Мы бежим не только для себя — мы бежим, чтобы изменить мир к лучшему.",
+      "Благотворительные заплывы Aqua Collective придают нашим метрам смысл. Мы плывем не только для себя — мы плывем, чтобы изменить мир к лучшему.",
     by: "Раиса Грин, чемпион благотворительности",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RaisaGrin&backgroundColor=16a34a&textColor=ffffff",
   },
   {
     tempId: 17,
     testimonial:
-      "Мастер-классы по технике в Stride Collective преобразили мою беговую форму. Я стал быстрее и забыл о травмах благодаря экспертному руководству.",
-    by: "Кирилл Вонг, перфекционист формы",
+      "Мастер-классы по технике в Aqua Collective преобразили мой кроль. Я стал быстрее и забыл о боли в плечах благодаря экспертному руководству.",
+    by: "Кирилл Вонг, перфекционист техники",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=KirillVong&backgroundColor=2563eb&textColor=ffffff",
   },
   {
     tempId: 18,
     testimonial:
-      "Виртуальные забеги Stride Collective во время локдауна спасли мой рассудок. Даже когда мы не могли бегать вместе, мы оставались связаны как сообщество.",
+      "Онлайн-тренировки Aqua Collective во время закрытия бассейнов спасли мой прогресс. Даже тогда мы оставались связаны как сообщество.",
     by: "Александра Фостер, виртуальный воин",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexandraFoster&backgroundColor=be185d&textColor=ffffff",
   },
   {
     tempId: 19,
     testimonial:
-      "Наставничество в Stride Collective меняет жизни. Опытные бегуны берут новичков под крыло и щедро делятся своей мудростью.",
+      "Наставничество в Aqua Collective меняет жизни. Опытные пловцы берут новичков под крыло и щедро делятся своей мудростью.",
     by: "Карлос Мендес, благодарный ученик",
     imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=CarlosMendez&backgroundColor=0891b2&textColor=ffffff",
   },
